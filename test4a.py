@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-def test4():
+def test4a():
     img = cv2.imread("./bouten_moeren.jpg")
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     grayBlur = cv2.GaussianBlur(gray, (25, 25), 0)
@@ -14,7 +14,8 @@ def test4():
             cv2.drawContours(img, [cnt], -1, (0, 255, 255), 3)
     cv2.imshow('frame', img)
 
-test4()
+
+test4a()
 
 k = cv2.waitKey(0)
 print(k)
