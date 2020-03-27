@@ -23,9 +23,9 @@ def test3a():
     cv2.imshow('resG', cv2.bitwise_and(img, img, mask=maskG))
     cv2.imshow('resB', cv2.bitwise_and(img, img, mask=maskB))
 
+
 test3a()
 
 k = cv2.waitKey(0)
 print(k)
 cv2.destroyAllWindows()
-
