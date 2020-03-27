@@ -25,7 +25,7 @@ def test4():
 
         if holes > 0:
             cv2.drawContours(img, [cnt], -1, (255, 0, 0), 3)
-            print("Nut", factor, holes, )
+            print("Nut", factor, holes)
         elif factor > 0.8:
             cv2.drawContours(img, [cnt], -1, (0, 255, 255), 3)
             print("Standing Bold", factor, holes)
